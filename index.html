@@ -10,7 +10,7 @@
 	<nav class="navbar navbar-fixed-top navbar-default">
 		<div class="container">
 			<div class="row">
-				<div class="navbar-header; col-md-8">
+				<div class="navbar-header; col-md-7">
 					<h2>Open Book</h2>
 				</div>
 				<div class="col-md-4">
@@ -21,6 +21,9 @@
 						<button type="submit" class="btn btn-default">Submit</button>
 					</form>
 				</div>
+				<div class="col-md-1" style="padding-top:7.5px">
+					<button type="button" class="btn btn-info" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo" id="create">Sign up / Sign in</button>
+				</div>
 			</div>
 			<div class="col-md-4">
 				<a href="#">
@@ -28,12 +31,12 @@
 				</a>
 			</div>
 			<div class="col-md-4">
-				<a href="#">
+				<a href="inprogress.html">
 					<button type="button" class="btn btn-default btn-lg default" id="inprogress">IN PROGRESS</button>
 				</a>
 			</div>
 			<div class="col-md-4">
-				<a href="#">
+				<a href="popular.html">
 					<button type="button" class="btn btn-default btn-lg default" id="popular">POPULAR</button>
 				</a>
 			</div>
@@ -93,17 +96,15 @@
 							<button type="button" class="list-group-item">Cutting Edge Technology Insight</button>
 							<button type="button" class="list-group-item">New Law just Passed</button>
 						</div>
-						<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+						<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal" id="Start">
 							Start Writing
 						</button>
-						<!-- Modal -->
 						<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
 							<div class="modal-dialog" role="document">
 								<div class="modal-content">
 						    		<div class="modal-header">
 						    			<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
 										<h4 class="modal-title" id="myModalLabel">My New Story</h4>
-										<!-- <input type="text" autofocus placeholder="Enter Title Here"> -->
 									</div>
 									<div class="modal-body">
 										<textarea class="form-control" rows="10" placeholder="Start Writing Your Story Here!" id="story"></textarea>
@@ -115,13 +116,74 @@
 								</div>
 							</div>
 						</div>
-					</div> <!-- topstories -->
+						<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+							<div class="modal-dialog" role="document">
+								<div class="modal-content">
+									<div class="modal-header">
+										<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+										<h4 class="modal-title" id="exampleModalLabel">Create Profile</h4>
+									</div>
+									<div class="modal-body">
+										<div class="big">
+											<div class="row">
+												<div class="form-group; col-md-12; forma">
+													<label for="recipient-name" class="control-label; user">User Name</label>
+												</div>
+												<div class="forma; col-md-8" align="left">
+													<input type="text" class="form-control; entry" id="recipient-name">
+												</div>
+												<div class="col-md-4; inputs">
+													<p>Javascript!</p>
+												</div>
+											</div>
+											<div class="row">
+												<div class="form-group; col-md-12; forma">
+													<label for="recipient-name" class="control-label; user">Email</label>
+												</div>
+												<div class="forma; col-md-8" align="left">
+													<input type="text" class="form-control; entry" id="recipient-name">
+												</div>
+												<div class="col-md-4; inputs;">
+													<p>Javascript!</p>
+												</div>
+											</div>
+											<div class="row">
+												<div class="form-group; col-md-12; forma">
+													<label for="recipient-name" class="control-label; user">Password</label>
+												</div>
+												<div class="forma; col-md-8" align="left">
+													<input type="text" class="form-control; entry" id="recipient-name">
+												</div>
+												<div class="col-md-4; inputs">
+													<p>Javascript!</p>
+												</div>
+											</div>
+											<div class="row">
+												<div class="form-group; col-md-12; forma">
+													<label for="recipient-name" class="control-label; user">Confirm Password</label>
+												</div>
+												<div class="forma; col-md-8" align="left">
+													<input type="text" class="form-control; entry" id="recipient-name">
+												</div>
+												<div class="col-md-4; inputs">
+													<p>Javascript!</p>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="modal-footer">
+										<button type="button" class="btn btn-primary">Create Profile</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div><!--sidebar-->
 		</div><!--big row-->
 	</div><!--container-->
 </body>
-<script src="calculator.js"></script>
+<script src="main.js"></script>
 <script src="min.jQuery.js"></script>
-<script src="bootstrap.js"></script>
+<script src="bootstrap/js/bootstrap.js"></script>
 </html>
