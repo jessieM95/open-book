@@ -1,7 +1,8 @@
-var published = document.getElementById("published");
-var inprogress = document.getElementById("inprogress");
-var popular = document.getElementById("popular");
-var submit = document.getElementById("submit");
+document.getElementById("published").addEventListener("click",click);
+document.getElementById("inprogress").addEventListener("click",click);
+document.getElementById("popular").addEventListener("click",click);
+document.getElementById("submit").addEventListener("click",addToPage);
+document.getElementById("create_profile").addEventListener("click",create);
 var story = document.getElementById("story");
 var userstories = document.getElementById("p");
 var para = document.getElementsByTagName('p');
@@ -10,19 +11,21 @@ var start = document.getElementById("start");
 var create = document.getElementById("create");
 var entry = document.getElementsByClassName("entry");
 
-published.addEventListener("click",click);
-inprogress.addEventListener("click",click);
-popular.addEventListener("click",click);
-submit.addEventListener("click",addToPage);
-console.log(entry);
-
 for(var i = 0; i < entry.length; i++) {
     entry[i].onchange = responsiveInput;
 }
 
+function create() {
+    var password_warning = this.parentNode.getElementsByClassName("password_warning");
+   console.log(password_warning);
+   password_warning[0].visibility = 
+    if (entry[2].value != entry[3].value) {
+        // password_warning[0].className = "";
+    }
+
+}
 
 function responsiveInput() {
-    console.log(this.value);
     var row = this.parentNode.parentNode;
     var javaS = row.getElementsByTagName("p");
     javaS[0].innerHTML = this.value;

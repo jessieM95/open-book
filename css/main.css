@@ -28,3 +28,8 @@ nav {
 .big {
 	margin-top: -20px;
 }
+h4.password_warning {
+	color: rgba(255, 0, 0, 0.9);
+	text-align: left;
+	visibility: hidden;
+}
