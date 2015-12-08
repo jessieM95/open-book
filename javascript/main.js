@@ -21,7 +21,6 @@ for(var i = 0; i < entry.length; i++) {
     entry[i].onchange = responsiveInput;
 }
 
-
 function available() {
     var row = this.parentNode.parentNode;
     var response = row.getElementsByTagName("p")[0];
