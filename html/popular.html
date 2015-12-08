@@ -3,12 +3,14 @@
 <head>
 	<title>Open Book</title>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+<link rel="stylesheet" href="../css/main.css">
+
 </head>
-<body style="padding-bottom:20px">
-	<nav class="navbar navbar-fixed-top navbar-default" style="padding-bottom:10px">
+<body>
+	<nav class="navbar navbar-fixed-top navbar-default">
 		<div class="container">
 			<div class="row">
-				<div class="navbar-header; col-md-8">
+				<div class="navbar-header; col-md-7">
 					<h2>Open Book</h2>
 				</div>
 				<div class="col-md-4">
@@ -19,37 +21,61 @@
 						<button type="submit" class="btn btn-default">Submit</button>
 					</form>
 				</div>
+				<div class="col-md-1" style="padding-top:7.5px">
+					<button type="button" class="btn btn-info" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo" id="create">Sign up / Sign in</button>
+				</div>
 			</div>
 			<div class="col-md-4">
 				<a href="../index.html">
-					<button type="button" class="btn btn-default btn-lg default">PUBLISHED</button>
+					<button type="button" class="btn btn-default btn-lg default" id="published">PUBLISHED</button>
 				</a>
 			</div>
 			<div class="col-md-4">
 				<a href="inprogress.html">
-					<button type="button" class="btn btn-default btn-lg default">IN PROGRESS</button>
+					<button type="button" class="btn btn-default btn-lg default" id="inprogress">IN PROGRESS</button>
 				</a>
 			</div>
 			<div class="col-md-4">
 				<a href="#">
-					<button type="button" class="btn btn-primary btn-lg active">POPULAR</button>
+					<button type="button" class="btn btn-primary btn-lg active" id="popular">POPULAR</button>
 				</a>
 			</div>
 		</div><!--end container-->
 	</nav>
 	<div class="container">
-		<div class="row" style="padding-top:120px">
+		<div class="row; movedown">
 			<div class="col-md-8">
 				<h1>This is a Popular Story
-				<p><small>This story has 10,245 views.</small></p>
+					<p><small>This story has 10,201 views.</small></p>
 				</h1>
-				<p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that produces no resultant pleasure?</p>
-				<p>On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain. These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided. But in certain circumstances and owing to the claims of duty or the obligations of business it will frequently occur that pleasures have to be repudiated and annoyances accepted. The wise man therefore always holds in these matters to this principle of selection: he rejects pleasures to secure other greater pleasures, or else he endures pains to avoid worse pains.</p>
-				<textarea class="form-control" rows="10" placeholder="Start Writing Your Story Here!"></textarea>
-				<button type="submit" class="btn btn-default">Submit</button>
+				<p>
+					Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+				</p>
+				<p>
+					It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+				</p>
+				<p>
+					On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain. These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided. But in certain circumstances and owing to the claims of duty or the obligations of business it will frequently occur that pleasures have to be repudiated and annoyances accepted. The wise man therefore always holds in these matters to this principle of selection: he rejects pleasures to secure other greater pleasures, or else he endures pains to avoid worse pains.
+				</p>
+				<div class="userstories" id="p">
+					<hr>
+					<h1>Your Story Could be Here
+						<p><small>With a little support</small></p>
+					</h1>
+					<p></p>
+					<p></p>
+					<p></p>
+					<p></p>
+					<p></p>
+					<p></p>
+					<p></p>
+					<p></p>
+					<p></p>
+					<p></p>
+				</div>
 			</div><!--sample story and new story-->
 			<div class="col-md-4">
-				<div class="row col-md-12"><h4>Categories</h4></div>
+				<div class="row col-md-12"><h4>Trending Filters</h4></div>
 				<div class="row">
 					<div class="col-md-4">
 						<p><a class="btn btn-default btn-sm" href="#" role="button">Academic</a></p>
@@ -66,9 +92,107 @@
 						<p><a class="btn btn-default btn-sm" href="#" role="button">World</a></p>
 						<p><a class="btn btn-default btn-sm" href="#" role="button">Foreign</a></p>
 					</div>
+					<div class="col-md-12; topstories" style="padding-top:170px">
+						<hr>
+						<div class="col-md-12"><h4>Top Stories</h4></div>
+						<div class="list-group">
+							<button type="button" class="list-group-item">Self-Driving Car</button>
+							<button type="button" class="list-group-item">Students make Amazing Website</button>
+							<button type="button" class="list-group-item">Espresso Royale at Grainer</button>
+							<button type="button" class="list-group-item">Cutting Edge Technology Insight</button>
+							<button type="button" class="list-group-item">New Law just Passed</button>
+						</div>
+						<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal" id="Start">
+							Start Writing
+						</button>
+						<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+							<div class="modal-dialog" role="document">
+								<div class="modal-content">
+						    		<div class="modal-header">
+						    			<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+										<h4 class="modal-title" id="myModalLabel">My New Story</h4>
+									</div>
+									<div class="modal-body">
+										<textarea class="form-control" rows="10" placeholder="Start Writing Your Story Here!" id="story"></textarea>
+									</div>
+									<div class="modal-footer">
+										<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+										<button type="button" class="btn btn-primary" data-dismiss="modal" id="submit">Save changes</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+							<div class="modal-dialog" role="document">
+								<div class="modal-content">
+									<div class="modal-header">
+										<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+										<h4 class="modal-title" id="exampleModalLabel">Create Profile</h4>
+									</div>
+									<div class="modal-body">
+										<div class="big">
+											<div class="row">
+												<div class="form-group; col-md-12; forma">
+													<label for="recipient-name" class="control-label; user">User Name</label>
+												</div>
+												<div class="forma; col-md-8" align="left">
+													<input type="text" class="form-control; entry" id="recipient-name">
+												</div>
+												<div class="col-md-4; inputs">
+													<p></p>
+												</div>
+											</div>
+											<div class="row">
+												<div class="form-group; col-md-12; forma">
+													<label for="recipient-name" class="control-label; user">Email</label>
+												</div>
+												<div class="forma; col-md-8" align="left">
+													<input type="text" class="form-control; entry" id="recipient-name">
+												</div>
+												<div class="col-md-4; inputs;">
+													<p></p>
+												</div>
+											</div>
+											<div class="row">
+												<div class="form-group; col-md-12; forma">
+													<label for="recipient-name" class="control-label; user">Password</label>
+												</div>
+												<div class="forma; col-md-8" align="left">
+													<input type="text" class="form-control; entry" id="recipient-name">
+												</div>
+												<div class="col-md-4; inputs">
+													<p></p>
+												</div>
+											</div>
+											<div class="row">
+												<div class="form-group; col-md-12; forma">
+													<label for="recipient-name" class="control-label; user">Confirm Password</label>
+												</div>
+												<div class="forma; col-md-8" align="left">
+													<input type="text" class="form-control; entry" id="recipient-name">
+												</div>
+												<div class="col-md-4; inputs">
+													<p></p>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="modal-footer">
+										<div>
+											<h4 class="password_warning">Passwords are not the same!</h4>
+											<button type="button" class="btn btn-primary" id="create_profile">Create Profile</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div><!--sidebar-->
 		</div><!--big row-->
 	</div><!--container-->
 </body>
+<script src="../javascript/main.js"></script>
+<script src="../javascript/min.jQuery.js"></script>
+<script src="../javascript/bootstrap.js"></script>
 </html>
